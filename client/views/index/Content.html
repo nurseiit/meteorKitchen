@@ -1,0 +1,55 @@
+<template name="aboutIco">
+	<div class="container about-ico">
+			<div class="vertical-align row">				
+		    <div class="col-md-3 col-xs-12 text-center">
+		    		<div data-wow-delay="0.1s" class="span3 wow bounceIn">
+		        	<a class="ico ico-fresh" href="#"></a>
+		        	<p>Только свежие и&nbsp;качественные продукты</p>
+		        </div>
+		    </div>		    
+		    <div class="col-md-3 col-xs-12 text-center">
+		    	<div data-wow-delay="0.2s" class="span3 wow bounceIn">
+		        <a class="ico ico-speed" href="#"></a>
+		        <p>Доставка в&nbsp;течение часа</p>
+		      </div>
+		    </div>
+		    <div class="col-md-3 col-xs-12 text-center">
+		    	<div data-wow-delay="0.3s" class="span3 wow bounceIn">
+		        <a class="ico ico-chef" href="#"></a>
+		        <p>Лучшие<br>повара</p>
+		      </div>
+		    </div>
+		    <div class="col-md-3 col-xs-12 text-center">
+		    	<div data-wow-delay="0.4s" class="span3 wow bounceIn">
+		        <a class="ico ico-portions" href="#"></a>
+		        <p>Большие порции, огромный ассортимент</p>
+		      </div>
+		    </div>
+			</div>
+		</div>
+</template>
+
+<template name = "topImages">
+	<!-- TOP Images -->
+		<div class="row">
+			<img id="m1" style=" margin-bottom: -750px;" src="img/m1.png" alt="" />
+			<img id="m18" style="float:right;margin-bottom: -750px;" src="img/m18.png" alt="" />
+			<img id="mm4" style="margin-bottom: -750px; width: 500px" src="img/4.png" alt="" />
+			<img id="mmm4" style="margin-bottom: -750px; width: 500px" src="img/4.png" alt="" />
+			<img id="m2" style="margin-bottom: -750px; width: 400px" src="img/m2.png" alt="" />
+			<img id="m3" style="margin-bottom: -750px; width: 260px" src="img/m3.png" alt="" />
+		</div>
+		<!-- END TOP images -->
+</template>
+
+<template name="fancyTitle">
+	<div class="ribbon-title-wrap">
+        <div class="ribbon-title">
+          <div class="title-wrap">
+            <div class="title">{{#unless isSet}}Хиты{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+            <div class="shadow shadow-black">{{#unless isSet}}Хиты{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+            <div class="shadow shadow-red">{{#unless isSet}}Хиты{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+          </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,48 @@
+<template name="Carousel">
+	<!-- Carousel -->
+		<div class="container vertical-align">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="main-slider slider-styles" style="display: block;">
+      		<div class="container">
+          	<div class="action-box">
+              <div class="action-title">Популярное блюдо</div>
+              <hr>
+              <div class="action-strong">До 18 июня на все стейки скидка 30%</div>
+              <div class="action-text">Сочные стейки</div>
+              <a class="btn-flat" href="/menu">Заказать</a>                
+          	</div>
+          <div class="action-box action-box-under"></div>
+      </div>
+		</div>
+			</div>
+			<div class="col-md-1 col-sm-1"></div>
+			<div class="col-md-7 col-sm-7 col-xs-12">			
+				<div class="row">				
+					<div id="myCarousel" class="carousel slide">
+					  <!-- Dot Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					    <li data-target="#myCarousel" data-slide-to="3"></li>
+					  </ol>
+					  <!-- Items -->
+					  <div class="carousel-inner">
+					    <div class="active item">  <img src="img/slider/1.jpg" class="img-responsive"></div>
+					    <div class="item">  <img src="img/slider/2.jpg" class="img-responsive"></div>
+					    <div class="item">  <img src="img/slider/3.jpg" class="img-responsive"></div>
+					    <div class="item">  <img src="img/slider/4.jpg" class="img-responsive"></div>
+					  </div>
+					  <!-- Navigation -->
+					   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					            <span class="glyphicon glyphicon-chevron-left"></span>
+					        </a>
+					        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					            <span class="glyphicon glyphicon-chevron-right"></span>
+					        </a>
+					</div>
+				</div>
+			</div>
+		</div>          			            							
+		<!-- end Carousel -->	
+</template>

@@ -1,0 +1,83 @@
+<template name="cart">
+	<div class="ribbon-title-wrap">
+        <div class="ribbon-title">
+          <div class="title-wrap">
+            <div class="title">Корзина</div>
+            <div class="shadow shadow-black">Корзина</div>
+            <div class="shadow shadow-red">Корзина</div>
+          </div>
+        </div>
+	</div>
+	<br> <br> <br> <br>	
+	<div class="container" style="background-color:#fff; border-radius: 10px; padding: 50px">		
+		<div class="row">
+			<ul>
+				{{#each data}}										
+					{{>cartItem}}					
+				{{/each}}	
+			</ul>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4 col-xs-12 text-center" style="background-color: #e2edff; border-radius: 4px; color: #111111; font-size: 18px; padding: 15px; box-shadow: 0 0 1px black">
+				В сумме: <strong>{{total}}</strong> тенге.
+			</div>
+			<div class="col-md-1 col-xs-12" style="margin-bottom: 30px"></div>
+			<div class="col-md-7 col-xs-12" style="background-color: #ebdbff;color: #111111; font-size: 15px; padding: 15px; box-shadow: 0 0 1px black">
+				<h3 class="text-center"><strong>Заполните форму для доставки:</strong></h3> <br><br>
+				
+				<form action="https://formspree.io/nurseyit200@gmail.com"
+				      method="POST">
+				    <div class="form-group">
+					  <label for="addr">Адрес:</label>
+					  <input type="text" class="form-control" name="address" id="addr">
+					</div>
+					<div class="form-group">
+					  <label for="pwd">Номер телефона:</label>
+					  <input type="text" class="form-control" name="phone" id="pwd">
+					</div>					
+					<div class="form-group">
+					  <label for="comment">Примечание:</label>
+					  <textarea class="form-control" rows="5" name="comment" id="comment"></textarea>
+					</div>
+					<div class="text-center" style = "color: black; font-size: 15px">
+						<i>После нажатия кнопки <strong>'отправить'</strong>, вас перенаправит на страницу проверки.</i>
+					</div>
+					<div class="form-group text-center">											
+						<i class="btn before-submit">Отправить</i>
+						<input type="submit" value="Отправить" class="btn" id="send-mail" style="display: none">
+					</div>
+					<textarea style="display: none" name="order" id="ordata"></textarea>
+				</form>
+
+			</div>			
+		</div>
+	</div>	
+</template>
+
+<template name="cartItem">
+	{{#unless isoff}}	
+	<li class="col-md-12 col-sm-12 col-xs-12" id="{{this._id}}">
+		<div class="row vertical-align">			
+			<img class = "col-md-1 col-xs-3 text-center" style = "width: 100px" src={{path}} alt="">
+			<p class="col-md-3 col-xs-6" style = "margin-left: 20px; font-size: 20px; color: #478f00; font-family: Bitter, 'PT Serif', Georgia, serif"><strong>{{name}}</strong></p>
+			<p class="col-md-1 col-xs-3 text-center" style = "margin-left: 20px; font-size: 18px;"><strong>{{info}}</strong></p>
+			
+			<div class="col-md-3 col-xs-12 text-center">
+				<button class="btn-sm btn-primary increase">+</button>
+				<input style="max-width: 50px" type="text" value = {{cnt}} class="text-center">
+				<button class="btn-sm btn-warning decrease">-</button>								
+			</div>
+
+			<div class="col-md-3 col-xs-10 text-center" style="padding: 15px; box-shadow: 0 0 1px black">
+				<strong>{{cost}} тенге</strong>								
+			</div>
+			<div class="col-md-1 col-xs-2">
+				<button class="btn-sm btn-danger remove" style="margin-left: 10px">&times;</button>
+			</div>
+		</div>
+		<br>
+		<hr class = "fancy">
+	</li>
+	{{/unless}}
+</template>

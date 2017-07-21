@@ -1,0 +1,60 @@
+
+<head>
+		<title>Men's Kitchen | Shymkent</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <link rel="icon" href="img/favicon2.ico">	    
+</head>
+
+<template name="home">	
+		 	 
+	{{> Carousel}}
+
+	<!-- MENU -->
+	{{> fancyTitle}}
+	
+	{{> hitMenu}}
+	<!-- END MENU -->
+
+	{{> aboutIco}}		
+
+	<div class="mycontainer text-center" style="padding: 50px 0; border-radius: 10px">
+		<!-- <p class="my-text"><strong>Степень прожарки стейка</strong></p>
+		<br> -->
+		<img class="center-block img-responsive" src="img/other/stepen2.jpg" alt="">
+	</div>
+</template>
+
+<template name="main">
+	<div class="real">
+		<header>
+	    {{> Header}}
+		</header>
+		{{> topImages}}
+		{{> yield}}			
+		<footer class="container">
+			{{> Footer}}
+		</footer>
+		<script>
+			function TOTOP () {
+			    $('html,body').animate({scrollTop: 0}, 1000);
+			    return false;
+			}
+		</script>
+	</div>
+</template>
+
+<template name="notFound">	
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>404</h1>
+			<h2>Упс, кажется вы заблудились. На сайте нет такой страницы.</h2>
+		</div>
+	</div>
+	
+</template>

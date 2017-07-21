@@ -1,0 +1,36 @@
+<template name="menu">
+	<div class="ribbon-title-wrap">
+        <div class="ribbon-title">
+          <div class="title-wrap">
+            <div class="title">Меню</div>
+            <div class="shadow shadow-black">Меню</div>
+            <div class="shadow shadow-red">Меню</div>
+          </div>
+        </div>
+    </div>
+  <div class="container row" id="hit-menu" style="border-radius: 10px;"> 
+  	<div class="row">		
+  		<br>		
+  		{{#each data}}
+  			{{> menuItem}}
+  		{{/each}}
+      <br>        
+  	</div>
+
+    {{#if isSteak}}
+      <div class="row">        
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <br>
+          <hr class="fancy">
+          <h1 style="color:#ff4411; text-shadow: 0 1px 2px black;"><i>Соусы</i></h1>
+          <br>
+          <!-- <hr class="fancy"> -->
+        </div>
+        <br>  
+        {{#each sauce}}
+          {{> menuItem}}
+        {{/each}}  
+      </div>
+    {{/if}}
+  </div>
+</template>

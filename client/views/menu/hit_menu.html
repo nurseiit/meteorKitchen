@@ -1,0 +1,70 @@
+<template name="hitMenu">
+	<div class="mycontainer row" id="hit-menu" style="border-radius: 10px">
+		{{#each data}}
+			{{> menuItem}}
+		{{/each}}		
+	</div>
+</template>
+
+<template name="menuItem">
+	<div class="col-md-4 col-sm-6 col-xs-12 text-center wow bounceIn">
+			<hr class="fancy">
+			<img height="200" src={{path}} alt="" />						
+			<p class="text-center" style = "padding-bottom: 5px; color: #478f00; font: 22px Bitter,'PT Serif',Georgia,serif; font-size: 20px; margin-top: 10px">{{name}}</p>
+			<br>
+			{{#if add}}
+			<p class="text-center" style="min-height: 70px !important; font-size: 15px"><i>{{add}}</i></p>
+			<br>
+			{{/if}}
+			{{#unless add}}
+			<br><br>
+			{{/unless}}
+			{{#unless ispizza}}
+			<p class="text-center" style = "font-size: 17px"><strong>{{price}}</strong> Тенге</p>
+			{{/unless}}
+			
+				{{#if ispizza}}
+				<div class="product-hr"><span>Размер пиццы</span></div>
+				<div class="select-size">
+	                <label class="size-wrap small">
+		                <input type="radio" id="{{_id}}small">
+			            <span class="size-icon">
+			                <span class="size-num">30</span>
+			                <span class="size-cm">см</span>
+			            </span>
+			            <span class="price-wrap">
+			                <span class="price">{{smallPrice}}</span>
+			                <span>Тенге</span>
+	                    </span>
+		            </label>
+
+	                <label class="size-wrap big">
+		                <input type="radio" id="{{_id}}big">
+			            <span class="size-icon">
+			                <span class="size-num">37</span>
+			                <span class="size-cm">см</span>
+			            </span>
+			            <span class="price-wrap">
+			                <span class="price">{{bigPrice}}</span>
+			                <span>Тенге</span>
+	                    </span>
+		            </label>
+	            </div>
+            	{{/if}}            
+			
+			<button class="btn {{#unless added}}cart-add{{/unless}}">
+				{{#unless added}}В корзину{{/unless}}
+				{{#if added}}<i style="color:black">Добавлено</i>{{/if}}
+			</button>			
+		</div>
+</template>
+
+<template name="topCart">
+	<i class="ico ico-cart"></i>
+	<!-- <div id="CartFull" class="cart-full {{#unless nonempty}}hidden{{/unless}}" style="display: block;"></div> -->
+	{{#unless nonempty}}Корзина пуста{{/unless}}
+	
+	{{#if nonempty}}
+		<i class="btn opencart" style="margin-left: 5px"><strong style="color:red; font-size: 18px">{{count}}</strong> в корзине</i>
+	{{/if}}
+</template>
