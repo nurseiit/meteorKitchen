@@ -134,19 +134,20 @@ Template.cartItem.events ({
 	}
 });
 
-Template.hitMenu.helpers ({
-	//TODO: create additional data field -- (also: 'hit',)
-	data: Menu.find({also: 'hit'}),	
+Template.hitMenu.helpers ({	
+	data: Menu.find({ishit: true}),	
 });
 
 var names = [
 	'steak',
 	'pizza',
 	'fastfood',
-	'soups',
-	// 'order',
+	'soups',	
 	'salads',
 	'bar',
+	'dessert',
+	'meat',
+	'combo',
 ];
 
 Template.menu.helpers ({
