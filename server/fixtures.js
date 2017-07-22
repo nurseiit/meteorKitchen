@@ -42,6 +42,7 @@ var data_hit = [
 					{type: 'salads', name: 'Свежий', price:400, path: "img/menu/salads/svezh_small.png"},
 					{type: 'salads', name: 'Греческий', price:850, path: "img/menu/salads/greek_small.png"},
 					{type: 'salads', name: 'Цезарь', price:990, path: "img/menu/salads/cesar_small.png"},
+					
 
 					{type: 'bar', name: 'Кола', price:850, path: "img/menu/coke.png"},
 
