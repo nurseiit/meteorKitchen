@@ -10,6 +10,20 @@
 	        </div>
     	</div>
 		<br><br><br><br>
+            
+        <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [42.339827, 69.643058],
+                    zoom: 17
+                });
+
+                DG.marker([42.339827, 69.643058]).addTo(map).bindPopup('Мы здесь!');
+            });
+        </script>
+
     	<div class="container" style="border-radius: 10px; font-size: 17px; background-color: #fff; padding: 50px">
     		<hr style = "width: 700px">
     		<div class="row">
@@ -32,6 +46,7 @@
     		</div>
 
     		<hr style="width: 700px">
+            <div id="map" style="width:auto; height:500px"></div>
     	</div>
 	</div>
 </template>
