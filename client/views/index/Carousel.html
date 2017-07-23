@@ -7,7 +7,7 @@
           	<div class="action-box">
               <div class="action-title">Популярное блюдо</div>
               <hr>
-              <div class="action-strong">До 18 июня на все стейки скидка 30%</div>
+              <div class="action-strong">Все лето на все стейки скидка 30%</div>
               <div class="action-text">Сочные стейки</div>
               <a class="btn-flat" href="/menu">Заказать</a>                
           	</div>
@@ -45,4 +45,46 @@
 			</div>
 		</div>          			            							
 		<!-- end Carousel -->	
+</template>
+
+<template name="discounts">
+	<div class="ribbon-title-wrap">
+        <div class="ribbon-title">
+          <div class="title-wrap">
+            <div class="title">{{#unless isSet}}Скидки{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+            <div class="shadow shadow-black">{{#unless isSet}}Скидки{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+            <div class="shadow shadow-red">{{#unless isSet}}Скидки{{/unless}} {{#if isSet}} {{name}} {{/if}}</div>
+          </div>
+        </div>
+    </div>
+    <br><br>
+	<div class="container row">		
+		<div class="col-md-1"></div>
+		<div id="myCarousel2" class="carousel slide col-md-10">
+		  <!-- Dot Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel2" data-slide-to="1"></li>
+		    <li data-target="#myCarousel2" data-slide-to="2"></li>
+		    <li data-target="#myCarousel2" data-slide-to="3"></li>
+		    <li data-target="#myCarousel2" data-slide-to="4"></li>
+		  </ol>
+		  <!-- Items -->
+		  <div class="carousel-inner">
+		    <div class="active item">  <img src="img/other/skidki/1.jpg" class="center-block img-responsive"></div>
+		    <div class="item">  <img src="img/other/skidki/2.jpg" class="center-block img-responsive"></div>
+		    <div class="item">  <img src="img/other/skidki/3.jpg" class="center-block img-responsive"></div>
+		    <div class="item">  <img src="img/other/skidki/4.jpg" class="center-block img-responsive"></div>
+		    <div class="item">  <img src="img/other/skidki/5.jpg" class="center-block img-responsive"></div>
+	 	  </div>
+		  <!-- Navigation -->
+		    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+	            <span class="glyphicon glyphicon-chevron-left"></span>
+	        </a>
+	        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+	            <span class="glyphicon glyphicon-chevron-right"></span>
+	        </a>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
 </template>
