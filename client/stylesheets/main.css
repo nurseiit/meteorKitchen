@@ -1,3 +1,7 @@
+.bg-white {
+    background-color: #fff;
+}
+
 .product-hr {
     padding-bottom: 9px;
     border-top: 1px #dadada solid;
