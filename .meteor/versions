@@ -48,6 +48,7 @@ jacklam:meteor-wowjs@0.0.1
 jquery@1.11.10
 kadira:blaze-layout@2.3.0
 launch-screen@1.1.1
+less@2.7.9
 livedata@1.0.18
 logging@1.1.17
 meteor@1.7.0
