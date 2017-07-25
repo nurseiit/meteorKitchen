@@ -179,7 +179,10 @@ Template.menuItem.helpers ({
 	},
 	ispizza: function () {
 		return this.type === 'pizza';
-	},	
+	},
+        iscombo: function () {
+                return this.type === 'combo';
+        },
 });
 Template.menuItem.events ({
 	'click button.cart-add':function (event, template) {

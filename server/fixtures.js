@@ -50,10 +50,16 @@ var data_hit = [
 					{type: 'meat', name: 'Биточки из курицы', price:750, path: "img/menu/meat/bitocka_small.png"},					
 					{type: 'meat', name: 'Баранина с овощами', price:1690, path: "img/menu/meat/baran_small.png"},					
 					{type: 'meat', name: 'Баранина по-крестьянский', price:1680, path: "img/menu/meat/__.png"},					
-				];
+                                        {type: 'combo', name: 'Комбо 1 | Выгодно', add: 'Каламаки /2 порции/ \n Фри /2 порции/ \n Cocal-cola /2/', price:1650, path: "img/menu/combo/1.png"},
+                                        {type: 'combo', name: 'Комбо 2', add: 'Пицца Пепперони \n Фри /2 порции/ \n Cocal-cola /2/', price:1800, path: "img/menu/combo/2.png"},
+                                        {type: 'combo', name: 'Комбо 3', add: 'Маргарита \n Пепперони \n Cocal-cola /4/', price:2150, path: "img/menu/combo/3.png"},
+    
+				]; 
+
 
 if (Menu.find().count() === 0) {
 	for (var i = 0; i < data_hit.length; i++)
 		Menu.insert(data_hit[i]);
 }
+
 
