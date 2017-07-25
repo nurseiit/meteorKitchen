@@ -1,5 +1,4 @@
-var data_hit = [
-					
+var data_hit = [					
 					{type: 'steak', name: 'Стейк Баффало', add: 'нежное и постное мясо с овощами в пикантном соусе. Подается на горячей жаровне.', price:2400, info: '300гр', path: "img/menu/steaks/meat_small.png"},					
 					{type: 'steak', name: 'Рибай говядина', add: 'стейк из подлопаточной части, толстый край, наиболее марморный, особенно сочный и ароматный.', price:2300, info: '300гр', path: "img/menu/steaks/rib-eye_small.png" },
 					{type: 'steak', name: 'Рибай конина', add: 'конина - это деликатес, отличается специфическим вкусом и является любимым блюдом кочевых народов.', price:2400, info: '450гр', path: "img/menu/steaks/rib-eye2_small.jpg"},
@@ -50,9 +49,9 @@ var data_hit = [
 					{type: 'meat', name: 'Биточки из курицы', price:750, path: "img/menu/meat/bitocka_small.png"},					
 					{type: 'meat', name: 'Баранина с овощами', price:1690, path: "img/menu/meat/baran_small.png"},					
 					{type: 'meat', name: 'Баранина по-крестьянский', price:1680, path: "img/menu/meat/__.png"},					
-                                        {type: 'combo', name: 'Комбо 1 | Выгодно', add: 'Каламаки /2 порции/ \n Фри /2 порции/ \n Cocal-cola /2/', price:1650, path: "img/menu/combo/1.png"},
-                                        {type: 'combo', name: 'Комбо 2', add: 'Пицца Пепперони \n Фри /2 порции/ \n Cocal-cola /2/', price:1800, path: "img/menu/combo/2.png"},
-                                        {type: 'combo', name: 'Комбо 3', add: 'Маргарита \n Пепперони \n Cocal-cola /4/', price:2150, path: "img/menu/combo/3.png"},
+                                        {type: 'combo', name: 'Комбо 1 | Выгодно', add: 'Каламаки /2 порции/ \n Фри /2 порции/ \n Coca-cola /2/', price:1650, path: "img/menu/combo/1.png"},
+                                        {type: 'combo', name: 'Комбо 2', add: 'Пицца Пепперони \n Фри /2 порции/ \n Coca-cola /2/', price:1800, path: "img/menu/combo/2.png"},
+                                        {type: 'combo', name: 'Комбо 3', add: 'Маргарита \n Пепперони \n Coca-cola /4/', price:2150, path: "img/menu/combo/3.png"},
     
 				]; 
 
