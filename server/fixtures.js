@@ -40,10 +40,7 @@ var data_hit = [
 
 					{type: 'salads', name: 'Свежий', price:400, path: "img/menu/salads/svezh_small.png"},
 					{type: 'salads', name: 'Греческий', price:850, path: "img/menu/salads/greek_small.png"},
-					{type: 'salads', name: 'Цезарь', price:990, path: "img/menu/salads/cesar_small.png"},
-					
-
-					{type: 'bar', name: 'Кола', price:850, path: "img/menu/coke.png"},
+					{type: 'salads', name: 'Цезарь', price:990, path: "img/menu/salads/cesar_small.png"},									
 
 					{type: 'meat', name: 'Крылышки на гриле', price:700, path: "img/menu/meat/wing.png"},					
 					{type: 'meat', name: 'Биточки из курицы', price:750, path: "img/menu/meat/bitocka_small.png"},					

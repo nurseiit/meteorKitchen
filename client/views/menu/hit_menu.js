@@ -158,7 +158,7 @@ Template.menu.helpers ({
 	isSteak: function () {
 		return !Session.get ('curId');
 	}, 
-	sauce: Menu.find({type: 'bar'}),
+	sauce: Menu.find({type: 'sauce'}),
 
 });
 
