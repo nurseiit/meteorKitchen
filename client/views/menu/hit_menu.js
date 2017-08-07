@@ -183,6 +183,9 @@ Template.menuItem.helpers ({
         iscombo: function () {
                 return this.type === 'combo';
         },
+        isbar: function () {
+                return this.type === 'bar';
+        },
 });
 Template.menuItem.events ({
 	'click button.cart-add':function (event, template) {

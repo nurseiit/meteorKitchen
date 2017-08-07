@@ -9,7 +9,9 @@
 <template name="menuItem">
 	<div class="col-md-4 col-sm-6 col-xs-12 text-center wow bounceIn">
 			<hr class="fancy">
-			<img height="200" src={{path}} alt="" />						
+                        {{#unless isbar}}
+      			  <img height="200" src={{path}} alt="" />						
+                        {{/unless}}
 			<p class="text-center" style = "padding-bottom: 5px; color: #478f00; font: 22px Bitter,'PT Serif',Georgia,serif; font-size: 20px; margin-top: 10px">{{name}}</p>
 			<br>
 			{{#if add}}

@@ -1,3 +1,4 @@
+
 var data_hit = [					
 					{type: 'steak', name: 'Стейк Баффало', add: 'нежное и постное мясо с овощами в пикантном соусе. Подается на горячей жаровне.', price:2400, info: '300гр', path: "img/menu/steaks/meat_small.png"},					
 					{type: 'steak', name: 'Рибай говядина', add: 'стейк из подлопаточной части, толстый край, наиболее марморный, особенно сочный и ароматный.', price:2300, info: '300гр', path: "img/menu/steaks/rib-eye_small.png" },
@@ -49,9 +50,40 @@ var data_hit = [
                                         {type: 'combo', name: 'Комбо 1 | Выгодно', add: 'Каламаки /2 порции/ \n Фри /2 порции/ \n Coca-cola /2/', price:1650, path: "img/menu/combo/1.png"},
                                         {type: 'combo', name: 'Комбо 2', add: 'Пицца Пепперони \n Фри /2 порции/ \n Coca-cola /2/', price:1800, path: "img/menu/combo/2.png"},
                                         {type: 'combo', name: 'Комбо 3', add: 'Маргарита \n Пепперони \n Coca-cola /4/', price:2150, path: "img/menu/combo/3.png"},
-    
-				]; 
 
+    {type: 'bar', name: 'Чашка чая черный/зеленый', price: 70},
+    {type: 'bar', name: 'Чай черный/зеленый', price: 250},
+    {type: 'bar', name: 'Чай с молоком', price: 300},
+    {type: 'bar', name: 'Ташкентский', price: 400},
+    {type: 'bar', name: 'Энергетический', price: 490},
+    {type: 'bar', name: 'Марокканский', price: 490},  
+    
+    {type: 'bar', name: 'Эспрессо', price: 200},
+      {type: 'bar', name: 'Американо', price: 250},
+      {type: 'bar', name: 'Латте', price: 350},
+      {type: 'bar', name: 'Капучино', price: 300},			       
+    {type: 'bar', name: 'Киви лайм', price: 1100},
+      {type: 'bar', name: 'Клубничный', price: 1100},
+      {type: 'bar', name: 'Тропик', price: 1100},
+      {type: 'bar', name: 'Грейпфрут', price: 1100},
+
+    {type: 'bar', name: 'Коктейль Молочный', price: 650},
+      {type: 'bar', name: 'Коктейль Клубничный', price: 750},
+      {type: 'bar', name: 'Орео', price: 790},
+      {type: 'bar', name: 'Фраппе', price: 790},
+      {type: 'bar', name: 'Мохито', price: 790},
+      {type: 'bar', name: 'Айсберг', price: 790},
+      {type: 'bar', name: 'Марди', price: 790},
+      {type: 'bar', name: 'Зеленый шейк', price: 790},
+      {type: 'bar', name: 'Содовая', price: 150},
+
+      {type: 'sauce', name: 'Грибной', price: 350},
+        {type: 'sauce', name: 'Дзадзыки', price: 250},
+        {type: 'sauce', name: 'Сальса', price: 250},
+        {type: 'sauce', name: 'Барбекю', price: 250},
+        {type: 'sauce', name: 'Чили', price: 250},
+        {type: 'sauce', name: 'Кетчуп', price: 80},
+];
 
 if (Menu.find().count() === 0) {
 	for (var i = 0; i < data_hit.length; i++)
