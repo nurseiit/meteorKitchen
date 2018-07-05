@@ -1,2 +1,2 @@
 # meteorKitchen
-my first meteor app
+meteor app
